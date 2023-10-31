@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+
+  char choice;
+  int a,b;
+  printf("Enter your choice (+, -, *, /): ");
+  scanf("%c", &choice);
+  printf("enter value od a and b:");
+  scanf("%d%d\n",&a,&b);
+  switch(choice){
+    case '+' :
+    printf("%d+%d=%d",a,b,a+b);
+    break;
+    case '-' :
+    printf("%d-%d=%d",a,b,a-b);
+    break;
+    case '*' :
+    printf("%d*%d=%d",a,b,a*b);
+    break;
+    case '/' :
+    printf("%d/%d=%d",a,b,a/b);
+    break;
+    default:
+    printf("you enter wrong choice");
+  }
+}
